@@ -12,14 +12,10 @@ st.text_input("Second Number", key="num2")
 n1, n2 = None, None
 
 if st.session_state.num1:
-  n1 = st.session_state.num1
-  st.write(n1)
-  st.write(type(n1))
+  n1 = float(st.session_state.num1)
 
 if st.session_state.num2:
-  n2 = st.session_state.num2
-  st.write(n2)
-  st.write(type(n2))
+  n2 = float(st.session_state.num2)
   
 if st.session_state.num1 and st.session_state.num2:
-  st.write("The result of subtracting second number from the first is: "+(n1-n2))
+  st.write("The result of subtracting second number from the first is: "+str(n1-n2))
