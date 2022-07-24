@@ -4,7 +4,8 @@ import numpy as np
 
 st.title("Graded Assignment 8")
 st.header("Use Case: Subtraction of 2 given numbers.")
-st.write("Please enter 2 two numbers to be subtracted in the below text boxes")
+st.write("ID: 21f1005649")
+st.write("Please enter 2 numbers for subtraction in the below text boxes")
 
 st.text_input("First Number", key="num1")
 st.text_input("Second Number", key="num2")
@@ -28,4 +29,4 @@ if st.session_state.num2:
     st.error('Please enter a number for second number') 
 
 if st.session_state.num1 and st.session_state.num2 and valid1 and valid2:
-  st.write("The result of subtracting second number from the first is: ",str(n1-n2))
+  st.write("The result of subtracting the second number from the first number is: ",str(n1-n2))
